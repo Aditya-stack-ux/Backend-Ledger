@@ -4,6 +4,10 @@ const cookieParser = require("cookie-parser")
 const app = express();
 
 
+app.get("/",(req,res)=>{
+    res.send("LEDGER SERVICES IS UP AND RUNNING")
+})
+
 app.use(express.json())
 app.use(cookieParser())
 
