@@ -39,17 +39,21 @@ The ledger acts as the source of truth for all balances.
 - Aggregation pipeline for financial computation
 - Index optimization for query performance
 
-## API Endpoints
+## 🔌 API Endpoints
 
-### Auth
-POST /api/auth/register
-POST /api/auth/login
-POST /api/auth/logout
+### 🔐 Authentication
 
-### Transactions / Accounts
-POST /api/transaction      // initialize transaction
-GET /api/accounts/balance  // check balance 
-POST /api/accounts       // create account
+- `POST /api/auth/register`
+- `POST /api/auth/login`
+- `POST /api/auth/logout`
+
+---
+
+### 💳 Transactions & Accounts
+
+- `POST /api/transaction` — Initialize transaction  
+- `GET /api/accounts/balance` — Check account balance  
+- `POST /api/accounts` — Create new account
 
 ## Database Design Decisions
 
