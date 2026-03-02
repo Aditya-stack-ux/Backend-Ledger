@@ -15,7 +15,9 @@ Unlike basic CRUD banking applications that directly mutate account balances, th
 The ledger acts as the source of truth for all balances.
 
 ________________________________________
+
 🚀 Tech Stack
+
 •	Node.js
 •	Express.js
 •	MongoDB
