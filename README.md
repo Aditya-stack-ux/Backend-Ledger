@@ -30,3 +30,36 @@ The ledger acts as the source of truth for all balances.
 - JWT Authentication
 - bcrypt (Password hashing)
 - MongoDB Replica Set (for transactions)
+
+
+## Architecture
+
+- MVC pattern
+- Middleware-based authentication
+- Aggregation pipeline for financial computation
+- Index optimization for query performance
+
+## API Endpoints
+
+### Auth
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+
+### Transactions / Accounts
+POST /api/transaction      // initialize transaction
+GET /api/accounts/balance  // check balance 
+POST /api/accounts       // create account
+
+## Database Design Decisions
+
+- Balance is not stored; calculated using aggregation.
+- TTL index used for automatic token cleanup.
+- Email field indexed for login optimization.
+
+## Security
+
+- JWT verification middleware
+- Ownership validation before transactions
+- Token blacklist after logout
+- Strict ObjectId comparison
