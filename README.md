@@ -2,7 +2,9 @@
 A secure and ACID-compliant banking backend built using Node.js, Express, and MongoDB.
 This system implements a double-entry ledger architecture to ensure financial integrity, auditability, and transactional consistency.
 ________________________________________
+
 📌 Project Overview
+
 This project simulates core banking functionality with a production-inspired backend design.
 Unlike basic CRUD banking applications that directly mutate account balances, this system:
 •	Implements double-entry accounting
@@ -11,6 +13,7 @@ Unlike basic CRUD banking applications that directly mutate account balances, th
 •	Maintains immutable ledger records
 •	Ensures financial data integrity
 The ledger acts as the source of truth for all balances.
+
 ________________________________________
 🚀 Tech Stack
 •	Node.js
