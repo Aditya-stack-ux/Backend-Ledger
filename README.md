@@ -55,6 +55,15 @@ The ledger acts as the source of truth for all balances.
 - `GET /api/accounts/balance` — Check account balance  
 - `POST /api/accounts` — Create new account
 
+## 📧 Email Service
+
+- Sends email notifications for key events (e.g., registration, transactions).
+- Uses a dedicated email service layer.
+- Triggered only after successful transaction commit.
+- Environment-based credential configuration.
+- Graceful failure handling to prevent blocking core operations.
+
+
 ## Database Design Decisions
 
 - Balance is not stored; calculated using aggregation.
